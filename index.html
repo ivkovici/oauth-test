@@ -28,6 +28,7 @@
             console.log(element.id);
             auth2.attachClickHandler(element, {},
                 function(googleUser) {
+                    console.log(googleUser, 'rekeke', googleUser.getBasicProfile());
                 document.getElementById('name').innerText = "Signed in: " +
                     googleUser.getBasicProfile().getName();
                 }, function(error) {
